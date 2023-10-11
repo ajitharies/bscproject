@@ -31,7 +31,22 @@ const Book = () => {
 
           return;
         }
+        const myobj={
+          bookname:bn,
+          authorname:an,
+          publisher:pb
+        }
+      fetch("https://newsample-5ad05-default-rtdb.firebaseio.com/Newsample.json",
+      {
+method:"POST",
+body:JSON.stringify(myobj),
+headers:{"Content-Type":"application/json",
+      }
 
+
+      }
+      );
+      alert("Record saved") 
 
   }
     return (
