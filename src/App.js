@@ -8,6 +8,8 @@ import Course from "./Components/Course/Course";
 import Home from "./Components/Home/Home";
 import Book from "./Components/Book/Book";
 import Bookview from "./Components/Book/Bookview";
+import Pro from "./Components/PRODUCT/Pro";
+import Productview from "./Components/PRODUCT/Productview";
 function App() {
   return (
     <div>
@@ -23,7 +25,8 @@ function App() {
           <Route path={'/Home'} element={<Home/>}></Route>
           <Route path={'/Book'} element={<Book/>}></Route>
           <Route path={'/Bookview'} element={<Bookview/>}></Route>
-  
+          <Route path={'/Pro'} element={<Pro/>}></Route>
+          <Route path={'/Productview'} element={<Productview/>}></Route>
         </Routes>
      </BrowserRouter>
 
